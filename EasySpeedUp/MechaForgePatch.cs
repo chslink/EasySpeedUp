@@ -5,7 +5,7 @@ namespace EasySpeedUp;
 [HarmonyPatch(typeof(MechaForge), nameof(MechaForge.GameTick))]
 public class MechaForgePatch
 {
-    public static void Prefix(MechaForge __instance, out int __state)
+    public static void Prefix(ref MechaForge __instance, out int __state)
     {
         __state = 0;
         if (__instance.tasks == null)
@@ -23,7 +23,7 @@ public class MechaForgePatch
         }
     }
 
-    public static void Postfix(MechaForge __instance, int __state)
+    public static void Postfix(ref MechaForge __instance, int __state)
     {
         if (__state == 0)
             return;

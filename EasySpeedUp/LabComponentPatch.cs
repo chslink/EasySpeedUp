@@ -29,13 +29,13 @@ public static class LabComponentPatch
     [HarmonyPatch(typeof(LabComponent), nameof(LabComponent.InternalUpdateResearch))]
     public static void ResearchPrefix(
         float power,
-        ref float speed,
+        ref float research_speed,
         int[] consumeRegister,
         ref TechState ts,
         ref int techHashedThisFrame,
         ref long uMatrixPoint,
         ref long hashRegister)
     {
-        speed *= EasySpeedUpLib.SpeedScale;
+        research_speed *= EasySpeedUpLib.SpeedScale;
     }
 }

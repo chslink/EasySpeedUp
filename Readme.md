@@ -25,19 +25,16 @@ Download the mod file.
 Extract the downloaded file and place the extracted folder in the BepInEx plugins directory.
 ## 注意事项 / Notes
 
-版本：`0.9.27.15466`
+版本：`0.10.28.20779`
 
 请确保游戏版本与本Mod兼容。
 使用本Mod可能导致游戏不稳定，建议定期备份存档。
 
-Version: `0.9.27.15466`
+Version: `0.10.28.20779`
 
 Please ensure that this mod is compatible with your game version.
 Using this mod may cause the game to become unstable, so it is recommended to back up your save files regularly.
 
-## 更新日志 / Changelog
-
-2023年12月07日：发布v1.0版本
 
 感谢您使用Mod，祝您游戏愉快！
 Thank you for using the mod, and enjoy your game!
