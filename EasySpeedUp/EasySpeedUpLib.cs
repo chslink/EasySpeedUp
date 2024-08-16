@@ -10,7 +10,7 @@ using HarmonyLib;
 [BepInProcess("DSPGAME.exe")]
 public class EasySpeedUpLib : BaseUnityPlugin
 {
-    private const string Version = "1.0.1";
+    private const string Version = "1.1.0";
 
     // private static bool _enable = false;
     public static int SpeedScale
@@ -66,7 +66,9 @@ public class EasySpeedUpLib : BaseUnityPlugin
         harmony.PatchAll(typeof(MechaLabPatch));
         harmony.PatchAll(typeof(ForgeTaskPatch));
         // 光子合成加速
-        harmony.PatchAll(typeof(PowerGeneratorComponentPatch));
+        harmony.PatchAll(typeof(PowerSystemPatch));
+        // 飞船加速？
+        harmony.PatchAll(typeof(PlanetTransportPatch));
     }
 
     // private const ConfigFile configFile = new ConfigFile(Paths.ConfigPath, ) 
